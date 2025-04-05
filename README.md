@@ -6,19 +6,12 @@ This project consists of a Next.js frontend and a FastAPI backend.
 
 The frontend is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-### Environment Setup
-
-Create a `.env.local` file in the root directory with your OpenAI API key:
-
-```
-OPENAI_API_KEY=your_openai_api_key_here
-```
 
 ### Getting Started
 
-1. Navigate to the frontend directory:
+1. Navigate to the directory:
 ```bash
-cd frontend
+cd pulseiq-poc
 ```
 
 2. Install dependencies:
@@ -87,25 +80,3 @@ Once the server is running, you can access the auto-generated API documentation 
 - http://localhost:8000/docs
 - http://localhost:8000/redoc
 
-## Learn More
-
-### Frontend
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-### Backend
-- [FastAPI Documentation](https://fastapi.tiangolo.com/) - learn about FastAPI features.
-- [Uvicorn Documentation](https://www.uvicorn.org/) - learn about the ASGI server Uvicorn.
-
-## Deployment
-
-### Frontend
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out the [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-
-### Backend
-For the FastAPI backend, you can deploy to platforms like:
-- [Heroku](https://devcenter.heroku.com/articles/getting-started-with-python)
-- [AWS](https://aws.amazon.com/getting-started/hands-on/deploy-python-application/)
-- [Google Cloud](https://cloud.google.com/appengine/docs/standard/python3/building-app)
