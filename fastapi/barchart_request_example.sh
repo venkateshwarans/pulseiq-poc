@@ -1,13 +1,13 @@
 #!/bin/bash
 
-curl -X POST "http://localhost:8000/api/chat" \
+curl -X POST "https://pulseiq-poc.vercel.app/api/chat" \
   -H "Content-Type: application/json" \
   -d '{
     "messages": [
       {
         "id": "msg_1",
         "role": "user",
-        "message": "Generate a bar chart showing sales data for different product categories"
+        "message": "recipe for fried chicken"
       }
     ]
   }'
