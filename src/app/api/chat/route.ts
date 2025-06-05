@@ -17,7 +17,7 @@ if (!process.env.OPENAI_API_KEY) {
 export async function POST(req: NextRequest) {
   const { messages } = (await req.json()) as { messages: Message[] };
   const client = new OpenAI({
-    apiKey: process.env.OPENAI_API_KEY, // This will use the API key from environment variables
+    baseURL: 'https://pulseiq-poc.vercel.app/api/chat'
   });
   const llmStream = await client.chat.completions.create({
     model: "gpt-4o",

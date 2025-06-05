@@ -15,7 +15,7 @@ const processMessage = async ({
   messages: Message[];
   abortController: AbortController;
 }) => {
-  const response = await fetch("http://localhost:8000/api/chat", {
+  const response = await fetch("https://pulseiq-poc.vercel.app/api/chat", {
     method: "POST",
     body: JSON.stringify({ threadId, messages }),
     headers: {

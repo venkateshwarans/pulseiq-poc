@@ -21,6 +21,9 @@ export const BarChartTemplate = (props: BarChartTemplateProps) => {
     value: item.value
   }));
 
+  // Define chart theme options
+  const chartTheme = props.theme || "ocean";
+  
   return (
     <Card variant="card" width="standard">
       <CardHeader
@@ -32,7 +35,7 @@ export const BarChartTemplate = (props: BarChartTemplateProps) => {
         <CrayonBarChart
           data={transformedData}
           categoryKey={props.categoryKey}
-          theme={props.theme || "ocean"}
+          theme={chartTheme}
         />
       </div>
     </Card>
